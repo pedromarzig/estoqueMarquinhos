@@ -10,9 +10,13 @@
     <div class="container">
         <h1 id="page-title">Product List</h1>
         <div class="form-container">
-            <input type="text" id="search-box" placeholder="Search for a product..." autocomplete="off">
-            <ul id="suggestions" class="suggestions"></ul>
+            <!-- Botão para adicionar um novo produto -->
+			<input type="text" id="search-box" placeholder="Search for a product..." autocomplete="off">
+			    <a class="btn btn-add" href="/products/add" id="add-product-button">Add New Product</a>
+			    <ul id="suggestions" class="suggestions"></ul>
         </div>
+
+        <!-- Tabela de produtos -->
         <table class="table">
             <thead>
                 <tr>
