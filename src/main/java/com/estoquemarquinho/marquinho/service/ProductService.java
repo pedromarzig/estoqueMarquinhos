@@ -45,4 +45,8 @@ public class ProductService {
             .orElseThrow(() -> new RuntimeException("Product not found"));
         repo.delete(product);
     }
+    
+    public List<Product> searProductsByname(String name){
+    	return repo.findByNameContainingIgnoreCase(name);
+    }
 }

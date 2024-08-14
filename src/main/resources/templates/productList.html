@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <title>Product List</title>
     <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="container">
         <h1 id="page-title">Product List</h1>
         <div class="form-container">
-            <a class="btn btn-add" href="/products/add" id="add-product-button">Add New Product</a>
+            <input type="text" id="search-box" placeholder="Search for a product..." autocomplete="off">
+            <ul id="suggestions" class="suggestions"></ul>
         </div>
         <table class="table">
             <thead>
@@ -37,5 +39,39 @@
             </tbody>
         </table>
     </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#search-box').on('input', function() {
+                var query = $(this).val();
+                if (query.length > 2) {
+                    $.ajax({
+                        url: '/products/search',
+                        type: 'GET',
+                        data: { query: query },
+                        success: function(data) {
+                            $('#suggestions').empty();
+                            data.forEach(function(product) {
+                                $('#suggestions').append('<li data-id="' + product.id + '">' + product.name + '</li>');
+                            });
+                        }
+                    });
+                } else {
+                    $('#suggestions').empty();
+                }
+            });
+
+            $('#suggestions').on('click', 'li', function() {
+                var productId = $(this).data('id');
+                window.location.href = '/products/edit/' + productId;
+            });
+
+            $(document).click(function(event) {
+                if (!$(event.target).closest('#search-box, #suggestions').length) {
+                    $('#suggestions').empty();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
