@@ -1,3 +1,5 @@
+/* styles.css */
+
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
@@ -6,42 +8,13 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Container da página */
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Título da página */
-#page-title {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-/* Botão de adicionar produto */
-.btn-add {
-    background-color: #28a745; /* Verde */
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 10px 0;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.btn-add:hover {
-    background-color: #218838;
-}
-
 /* Tabela de produtos */
+.table-container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
 .table {
     width: 100%;
     border-collapse: collapse;
@@ -62,23 +35,6 @@ body {
 
 .table tr:hover {
     background: #f1f1f1;
-}
-
-/* Botões da tabela */
-.btn-edit {
-    background-color: #ffc107; /* Amarelo */
-}
-
-.btn-edit:hover {
-    background-color: #e0a800;
-}
-
-.btn-delete {
-    background-color: #dc3545; /* Vermelho */
-}
-
-.btn-delete:hover {
-    background-color: #c82333;
 }
 
 /* Formulário de edição de produto */
@@ -132,6 +88,88 @@ body {
     color: #333;
 }
 
+/* Tabela de produtos */
+#page-title {
+    text-align: center;
+    color: #333;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn {
+    background-color: #007bff; /* Blue */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-edit {
+    background-color: #ffc107; /* Yellow */
+}
+
+.btn-delete {
+    background-color: #dc3545; /* Red */
+}
+
+.btn-add {
+    background-color: #28a745; /* Green */
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.form-container {
+    margin-bottom: 20px;
+}
+
+#suggestion{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #ddd;
+	max-height: 150px;
+	overflow-y: auto;
+	background-color: #fff;
+}
+#suggestion li{
+	padding: 8px;
+	cursor: pointer;
+}
+#suggestions li:hover{
+	background-color: #f1f1f1;
+}
 /* Sugestões de pesquisa */
 .form-container {
     position: relative;
