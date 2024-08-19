@@ -26,9 +26,6 @@ Pré-requisitos: Java 11
 # clonar repositório
 git clone https://github.com/pedromarzig/estoqueMarquinhos.git
 
-# entrar na pasta do projeto back end
-cd backend
-
 # executar o projeto
 ./mvnw spring-boot:run
 ```
