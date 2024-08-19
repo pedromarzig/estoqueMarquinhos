@@ -38,7 +38,7 @@ git clone https://github.com/pedromarzig/estoqueMarquinhos.git
 ![Página edição](./imagens/paginaEditar.png)
 
 ### Adicionar
-![Página Adicionar](./imagens/paginaAdicionar.png)
+![Página Adicionar](./imagens/paginaadd.png)
 
 # Autor
 
