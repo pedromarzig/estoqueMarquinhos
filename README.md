@@ -1,5 +1,5 @@
 # Controle de Estoque
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/pedromarzig/workshop-springboot4-jpa/blob/main/LICENSE)
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/pedromarzig/estoqueMarquinhos/blob/main/LICENSE)
 
 # Sobre o projeto
 
