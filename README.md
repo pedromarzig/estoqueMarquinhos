@@ -3,7 +3,7 @@
 
 # Sobre o projeto
 
-O Estoque Marquinhos é um sistema de gerenciamento de estoque desenvolvido em Java, utilizando o framework Spring MVC. O projeto visa simplificar o controle de produtos em pequenas e médias empresas, oferecendo funcionalidades essenciais para a administração de estoques. A interface do usuário é construída com Thymeleaf e HTML/CSS, enquanto o MongoDB é utilizado como banco de dados. Um pouco de JavaScript foi adicionado no HTML para melhorar a interatividade, principalmente na busca dinâmica de produtos.
+O Estoque Marquinhos é um sistema de gerenciamento de estoque desenvolvido em Java, utilizando o framework Spring MVC. O objetivo do projeto é simplificar o controle de produtos em pequenas e médias empresas, oferecendo funcionalidades como gerenciamento de produtos, busca dinâmica, e relatórios de estoque. A interface do usuário é construída com Thymeleaf e HTML/CSS, enquanto o MongoDB é utilizado como banco de dados. O sistema também inclui JavaScript para aprimorar a interatividade da interface.
 
 
 # Tecnologias utilizadas
@@ -48,3 +48,5 @@ cd backend
 Pedro Marzig Castelani
 
 https://www.linkedin.com/in/pedro-marzig-205a35212/
+
+Este projeto foi desenvolvido como parte de um processo de aprendizado, com a ajuda de estudos e sugestões de ferramentas como o ChatGPT.
