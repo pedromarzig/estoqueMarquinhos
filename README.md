@@ -35,7 +35,7 @@ cd backend
 
 ## Imagens
 ### Home
-![Página Inicial](./imagens/paginaIcial.png)
+![Página Inicial](./imagens/paginaInicial.png)
 
 ### Edição
 ![Página edição](./imagens/paginaEditar.png)
